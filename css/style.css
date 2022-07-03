@@ -1,0 +1,506 @@
+/*RESET*/
+
+
+/*DEBUG*/
+
+*  {
+    border:  1pxsolid greenyellow;
+}
+
+
+body, h1, h2, h3, p, ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #252525;
+}
+
+/*MENU-------------------------------------------------------------------------------------------------------*/
+
+.menu {
+    background: #252525;
+    padding: 20px;
+}
+
+.menu_container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.menu_container::after, .menu_container::before {
+    content: '';
+    display: table;
+    clear: both;
+
+}
+
+a.menu_logo {
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+.menu_container a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+
+}
+.menu_container a:hover, .menu_container a:active{
+    color:#9f0004;
+    transition: 0.4s;
+    font-size: 120%;
+
+}
+
+.menu_container h1 a::after{
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    background: #fff;
+}
+
+nav.menu_nav {
+    float: right;
+    margin-right: 10px;
+}
+
+.menu_nav li {
+    display: inline-block;
+
+}
+
+.menu_nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25em;
+}
+
+/*HEADER-------------------------------------------------------------------------------------------------------*/
+
+.intro {
+    background: url('../img/maxresdefault.png') no-repeat center center;
+    background-size: cover;
+    padding: 150px 0px;
+    text-align: center;
+    color: #fff;
+    
+
+}
+
+.intro h1{
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+.intro p{
+    font-style: italic;  
+    line-height: 2.5rem;  
+}
+
+
+.intro h1::after{
+    content: '';
+    display: inline-block;
+    height: 35px;
+    width: 450px;
+    background: #fff;
+}
+
+.intro h1::after{
+    content: '';
+    display: inline-block;
+    height: 35px;
+    width: 450px;
+    background: #fff;
+}
+
+.intro h1:hover, .intro h1:active{
+    color:#9f0004;
+    transition: 0.4s;
+
+}
+
+.intro h2{
+   text-decoration: overline;
+   color: #fff;
+}
+
+/*ABOUT-------------------------------------------------------------------------------------------------------*/
+
+.about {
+    padding: 60px 0;
+    background: #252525;
+    color: #fff;
+    border-top: 10px solid #9f0004;
+
+
+}
+
+.about_container {
+    max-width: 960px;
+    margin: 0 auto;
+    
+
+}
+
+.about_container::after, .about_container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+
+    
+}
+.about h2::after {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 30px;
+    background: #fff;
+    
+}
+
+.about_item {
+    float: left;
+    width: 460px;
+    margin: 0 10px;
+}
+
+.about_item img {
+    display: block;
+    max-width: 100%;
+    border-top: 10px solid #9f0004;
+    box-shadow: 1px 1px 10px #000;}
+
+.about_item h3 {
+    font-size: 2.25em;
+    background: #9f0004;
+    width: 220px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1em;
+    padding:  5px 0 10px;
+    top: -25px;
+    position: relative;
+   
+}
+
+.about > p {
+    font-size: 1.125em;
+    line-height: 1.4em;
+    font-style: italic;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+
+}
+
+/*PRODUCTS-------------------------------------------------------------------------------------------------------*/
+
+.products {
+    background: #646464;
+    padding: 60px 0;
+    border-top: 2px double #9f0004;
+    border-bottom: 2px solid #9f0004;
+
+}
+
+.products_container {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+.products_container::before, .products_container::after {
+    content: '';
+    display: table;
+    clear: both;
+
+}
+
+.products_item {
+    width: 250px;
+    float: left;
+    padding: 10px;
+    margin: 0 5px 80px 10px;
+    background: #9b9b9b;
+    border: 10px solid #929292;
+    border-top-right-radius: 150px;
+    border-top-left-radius: 150px;
+    box-shadow: 0 12px 0px 0px #929292, 0 40px 0px 0px #868686;
+
+}
+
+.products_item h2 {
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 20px;
+
+}
+
+.products_item p {
+    font-size: 0.875em;
+    line-height: 1.4em;
+    padding: 4px 10px;
+
+}
+
+.products_item h2::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 20px auto;
+    background: currentColor;
+    border: 5px solid #a4a4a5;
+    box-shadow: 0 0 0 10px currentColor;
+    
+}
+
+
+h2.horror::before {
+    color: #940005;
+    background: url('../img/icon/skull.svg') #940005 no-repeat center center;
+
+}
+
+h2.mistery::before {
+    color: #fff;
+    background: url('../img/icon/lupa.svg') #fff no-repeat center center;
+
+}
+
+h2.suspens::before {
+    color: #646464;
+    background: url('../img/icon/eye.svg') #646464 no-repeat center center;
+
+
+}
+
+.products_btn{
+    width: 180px;
+    border: 3px solid #252525;
+    color: #940005;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 1.125em;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin: 20px auto;
+}
+
+.products_btn:hover, .products_btn:active{
+    color:#fff;
+    transition: 0.4s;
+    font-size: 150%;
+
+}
+
+/*LOCATION-------------------------------------------------------------------------------------------------------*/
+
+
+.local {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    
+}
+
+
+.local > div:nth-child(1) {
+    background: #e9e9e9;
+    margin-top: 60px;
+
+    
+}
+.local > div:nth-child(3) {
+    background: #e9e9e9;
+    margin-bottom: 60px;
+    
+}
+
+.local_item img {
+    opacity: 0;
+    width: 460px;
+    float: left;
+    display: block;
+    margin: 0 10px;
+
+    /*overflow: hidden;  /*FAZ COM QUE QUALQUER ELEMENTO FORA DO CONTAINEIR SERJA ESCONDIDO*/
+}
+.local_item:hover  img{
+    transition: .8s ease;
+    opacity: 0.4;
+   
+}
+
+.local_item a:hover  {
+    color: #fff;
+    background: #9f0004;
+    border: none;
+    transition: 0.8s;
+}
+
+.local_item::after, .local_item::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.local_item {
+    clear: both;
+    margin: 0px auto;
+    border-bottom: 2px solid #940005;
+
+}
+
+.local_item > div {
+    width: 460px;
+    float: left;
+    margin: 0 10px;
+
+}
+
+.local_item h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.local_item p {
+    font-size: 1.125;
+    line-height: 1.3em;
+    max-width: 400px;
+    margin-bottom: 40px;
+}
+
+
+.local_item a {
+    font-size: 1.125em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid;
+    color: #252525;
+    padding: 10px 20px;
+    position: relative;
+    left: -310px;
+    top: 120px;
+    
+}
+
+
+/*NEWSLETTER-------------------------------------------------------------------------------------------------------*/
+
+.news {
+    background: #940005;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.news_container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.news_container::after, .news_container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.news_info {
+    width: 460px;
+    margin: 0 auto;
+    float: left;
+}
+
+.news_info h2 {
+    font-size: 2.25em;
+}
+
+.news_info p {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+.form_news {
+    width: 460px;
+    margin: 10px 10px 0 10px;
+    float: left;
+}
+
+.form_news label {
+    display: none;
+}
+
+.form_news input {
+    box-sizing: border-box;
+    width: 320px;
+    border: 3px solid #252525;
+    background: none;
+    font-size: 1em;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    float: left;
+}
+
+.form_news button {
+    background: #252525;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    width: 140px;
+    padding: 13px;
+    color: #fff;
+    border: none;
+    cursor:pointer;
+}
+
+/*FOOTER-------------------------------------------------------------------------------------------------------*/
+
+.footer {
+    background: #646464;
+    padding: 40px 0;
+}
+
+.footer_container {
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+.footer_container::after, .footer_container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.footer p {
+    float: left;
+    margin: 0 10px;
+    font-size: 1.125em;
+    line-height: 1.4em;
+}
+
+.footer img {
+    float: right;
+    margin: 0 10px;
+    display: block;
+}
